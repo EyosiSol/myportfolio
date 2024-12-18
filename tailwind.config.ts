@@ -12,6 +12,8 @@ export default {
       fontFamily: {
         oleoScript: ["var(--font-oleo-script)"],
         montserrat: ["var(--font-montserrat)"],
+        poppins: ["var(--font-poppins)"],
+        inter: ["var(--font-inter)"],
       },
       colors: {
         background: "hsl(var(--background))",
