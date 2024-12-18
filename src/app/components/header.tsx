@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function header() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -15,6 +16,12 @@ export default function header() {
     <div>
         <div className="">
             <Image src = "/logo.png" alt = "logo" width={80} height={80} />
+        </div>
+        <div className="">
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/myservice">My Service</Link>
+            <Link href="/contact">Contact</Link>
         </div>
       <Button
         variant="outline"
