@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
@@ -12,6 +13,9 @@ export default function header() {
 
   return (
     <div>
+        <div className="">
+            <Image src = "/logo.png" alt = "logo" width={80} height={80} />
+        </div>
       <Button
         variant="outline"
         size="icon"
