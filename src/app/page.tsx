@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Poppins, Montserrat, Inter } from "next/font/google";
+import WebDev from "./components/web/page";
+import Ui from "./components/ui/page";
+import PCB from "./components/pcb/page";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -209,7 +212,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[1144px] h-[900px] flex-col justify-between items-center inline-flex">
+      <div className="w-[1144px] h-fit gap-10 flex-col justify-between items-center inline-flex">
         <div className="flex-col justify-start items-center flex">
           <div className="text-white text-[45px] font-extrabold font-['Inter']">
             Projects
@@ -221,178 +224,28 @@ export default function Home() {
         <div className="justify-center items-center gap-[55px] inline-flex">
           <div className="w-[193px] h-[55px] p-2.5 bg-[#484e53] rounded-[50px] justify-center items-center gap-2.5 flex">
             <div className="text-neutral-100 text-base font-normal font-['Inter'] leading-normal">
-              Machine learning
+              Web Development
             </div>
           </div>
           <div className="w-[141px] h-[55px] p-2.5 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex">
             <div className="text-[#a9a9a9] text-base font-normal font-['Inter'] leading-normal">
-              Sql
+              Ui/Ux Design
             </div>
           </div>
           <div className="w-[129px] h-[55px] p-2.5 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex">
             <div className="text-[#a9a9a9] text-base font-normal font-['Inter'] leading-normal">
-              Power BI
+              PCB Design
             </div>
           </div>
-          <div className="w-[129px] h-[55px] p-2.5 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex">
+          <div className="w-fill h-[55px] p-4 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex">
             <div className="text-[#a9a9a9] text-base font-normal font-['Inter'] leading-normal">
-              AI/LLMs
-            </div>
-          </div>
-          <div className="w-56 h-14 p-2.5 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex">
-            <div className="text-[#a9a9a9] text-base font-normal font-['Inter'] leading-normal">
-              Spatial Data Science
+              Graphics Design
             </div>
           </div>
         </div>
-        <div className="self-stretch justify-start items-end gap-10 inline-flex">
-          <div className="w-[354.67px] flex-col justify-start items-start gap-8 inline-flex">
-            <Image
-              className="self-stretch h-[198.33px]"
-              src="/webdev.jpg"
-              alt="Project placeholder"
-              width={355}
-              height={198}
-            />
-            <div className="self-stretch justify-between items-end inline-flex">
-              <div className="flex-col justify-center items-start gap-4 inline-flex">
-                <div className="w-[283px] text-[#c1c1c1] text-xl font-bold font-['Inter'] leading-[30px]">
-                  Project name/description
-                </div>
-                <div className="w-[242px] text-[#a9a9a9] text-sm font-normal font-['Inter'] leading-[21px]">
-                  Technology used
-                </div>
-              </div>
-              <div className="p-[7.53px] origin-top-left rotate-180 bg-[#4fc3f7] rounded-[64.97px] justify-center items-center gap-[9.42px] flex">
-                <div className="w-[22.60px] h-[22.60px] relative">
-                  <div className="w-[13.18px] h-[13.18px] left-[4.71px] top-[3.30px] absolute"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-[354.67px] flex-col justify-start items-start gap-8 inline-flex">
-            <Image
-              className="self-stretch h-[198.33px]"
-              src="/webdev.jpg"
-              alt="Project placeholder"
-              width={355}
-              height={198}
-            />
-            <div className="self-stretch justify-between items-end inline-flex">
-              <div className="flex-col justify-center items-start gap-4 inline-flex">
-                <div className="w-[263px] text-[#c1c1c1] text-xl font-bold font-['Inter'] leading-[30px]">
-                  Project name/description
-                </div>
-                <div className="w-[242px] text-[#a9a9a9] text-sm font-normal font-['Inter'] leading-[21px]">
-                  Web Design / Usability Testing
-                </div>
-              </div>
-              <div className="p-[7.53px] origin-top-left rotate-180 bg-[#4fc3f7] rounded-[64.97px] justify-center items-center gap-[9.42px] flex">
-                <div className="w-[22.60px] h-[22.60px] relative">
-                  <div className="w-[13.18px] h-[13.18px] left-[4.71px] top-[3.30px] absolute"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-[354.67px] flex-col justify-start items-start gap-8 inline-flex">
-            <Image
-              className="self-stretch h-[198.33px]"
-              src="/webdev.jpg"
-              alt="Project placeholder"
-              width={355}
-              height={198}
-            />
-            <div className="self-stretch justify-between items-end inline-flex">
-              <div className="flex-col justify-center items-start gap-4 inline-flex">
-                <div className="w-[264px] text-[#c1c1c1] text-xl font-bold font-['Inter'] leading-[30px]">
-                  Project name/description
-                </div>
-                <div className="w-[242px] text-[#a9a9a9] text-sm font-normal font-['Inter'] leading-[21px]">
-                  Web Design / Usability Testing
-                </div>
-              </div>
-              <div className="p-[7.53px] origin-top-left rotate-180 bg-[#4fc3f7] rounded-[64.97px] justify-center items-center gap-[9.42px] flex">
-                <div className="w-[22.60px] h-[22.60px] relative">
-                  <div className="w-[13.18px] h-[13.18px] left-[4.71px] top-[3.30px] absolute"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="self-stretch justify-start items-end gap-10 inline-flex">
-          <div className="w-[354.67px] flex-col justify-start items-start gap-8 inline-flex">
-            <Image
-              className="self-stretch h-[198.33px]"
-              src="/webdev.jpg"
-              alt="Project placeholder"
-              width={355}
-              height={198}
-            />
-            <div className="self-stretch justify-between items-end inline-flex">
-              <div className="flex-col justify-start items-center gap-4 inline-flex">
-                <div className="self-stretch text-[#c1c1c1] text-xl font-bold font-['Inter'] leading-[30px]">
-                  Educational Platform
-                </div>
-                <div className="w-[242px] text-[#a9a9a9] text-sm font-normal font-['Inter'] leading-[21px]">
-                  Web Design / Usability Testing
-                </div>
-              </div>
-              <div className="p-[7.53px] origin-top-left rotate-180 bg-[#4fc3f7] rounded-[64.97px] justify-center items-center gap-[9.42px] flex">
-                <div className="w-[22.60px] h-[22.60px] relative">
-                  <div className="w-[13.18px] h-[13.18px] left-[4.71px] top-[3.30px] absolute"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-[354.67px] flex-col justify-start items-start gap-8 inline-flex">
-            <Image
-              className="self-stretch h-[198.33px]"
-              src="/webdev.jpg"
-              alt="Project placeholder"
-              width={355}
-              height={198}
-            />
-            <div className="self-stretch justify-between items-end inline-flex">
-              <div className="flex-col justify-start items-center gap-4 inline-flex">
-                <div className="self-stretch text-[#c1c1c1] text-xl font-bold font-['Inter'] leading-[30px]">
-                  Educational Platform
-                </div>
-                <div className="w-[242px] text-[#a9a9a9] text-sm font-normal font-['Inter'] leading-[21px]">
-                  Web Design / Usability Testing
-                </div>
-              </div>
-              <div className="p-[7.53px] origin-top-left rotate-180 bg-[#4fc3f7] rounded-[64.97px] justify-center items-center gap-[9.42px] flex">
-                <div className="w-[22.60px] h-[22.60px] relative">
-                  <div className="w-[13.18px] h-[13.18px] left-[4.71px] top-[3.30px] absolute"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-[354.67px] flex-col justify-start items-start gap-8 inline-flex">
-            <Image
-              className="self-stretch h-[198.33px]"
-              src="/webdev.jpg"
-              alt="Project placeholder"
-              width={355}
-              height={198}
-            />
-            <div className="self-stretch justify-between items-end inline-flex">
-              <div className="flex-col justify-start items-center gap-4 inline-flex">
-                <div className="self-stretch text-[#c1c1c1] text-xl font-bold font-['Inter'] leading-[30px]">
-                  Educational Platform
-                </div>
-                <div className="w-[242px] text-[#a9a9a9] text-sm font-normal font-['Inter'] leading-[21px]">
-                  Web Design / Usability Testing
-                </div>
-              </div>
-              <div className="p-[7.53px] origin-top-left rotate-180 bg-[#4fc3f7] rounded-[64.97px] justify-center items-center gap-[9.42px] flex">
-                <div className="w-[22.60px] h-[22.60px] relative">
-                  <div className="w-[13.18px] h-[13.18px] left-[4.71px] top-[3.30px] absolute"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* <WebDev /> */}
+        {/* <Ui /> */}
+        <PCB />
       </div>
       <div className="w-[696px] h-[861px] flex-col justify-start items-center gap-10 inline-flex">
         <div className="self-stretch text-center text-white text-[45px] font-extrabold font-['Inter']">
