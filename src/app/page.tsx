@@ -394,6 +394,50 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="w-[696px] h-[861px] flex-col justify-start items-center gap-10 inline-flex">
+        <div className="self-stretch text-center text-white text-[45px] font-extrabold font-['Inter']">
+          Get In Touch
+        </div>
+        <div className="self-stretch text-center text-[#4fc3f7] text-sm font-semibold font-['Inter']">
+          Lets work together
+        </div>
+        <div className="self-stretch h-[710px] flex-col justify-start items-start gap-4 flex">
+          <div className="text-white text-lg font-bold font-['Inter'] leading-snug">
+            Name
+          </div>
+          <div className="w-[696px] h-[70px] rounded-[10px] border border-[#d6ddec]" />
+          <div className="text-[#8987a1] text-xl font-normal font-['Inter'] leading-[30px]">
+            example@email.com
+          </div>
+          <div className="text-white text-lg font-bold font-['Inter'] leading-snug">
+            Email
+          </div>
+          <div className="w-[696px] h-[70px] rounded-[10px] border border-[#d6ddec]" />
+          <div className="text-[#8987a1] text-xl font-normal font-['Inter'] leading-[30px]">
+            full name
+          </div>
+          <div className="text-white text-lg font-bold font-['Inter'] leading-snug">
+            Service
+          </div>
+          <div className="w-[696px] h-[70px] relative">
+            <div className="w-[696px] h-[70px] left-0 top-0 absolute rounded-[10px] border border-[#d6ddec]" />
+            <div className="left-[33px] top-[20px] absolute justify-start items-center gap-[465px] inline-flex">
+              <div className="text-[#8987a1] text-xl font-normal font-['Inter'] leading-[30px]">
+                Select a service
+              </div>
+            </div>
+          </div>
+          <div className="text-white text-lg font-bold font-['Inter'] leading-snug">
+            Message
+          </div>
+          <div className="w-[696px] h-[222px] rounded-[10px] border border-[#d6ddec]" />
+          <div className="w-[696px] py-[19px] bg-white rounded-[10px] justify-center items-center inline-flex overflow-hidden">
+            <div className="text-center text-black text-base font-bold font-['Raleway'] leading-normal">
+              Get in Touch
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
