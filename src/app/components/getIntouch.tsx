@@ -71,7 +71,9 @@ export default function GetIntouch() {
   };
 
   return (
-    <div className={`w-dvw md:w-[600px] h-[861px] flex-col justify-start items-center gap-10 inline-flex ${inter.className}`}>
+    <div
+      className={`w-dvw md:w-[600px] h-[861px] flex-col justify-start items-center gap-10 inline-flex ${inter.className}`}
+    >
       <div className="flex flex-col gap-2">
         <div className="self-stretch text-center text-white text-5xl font-extrabold">
           Get In Touch

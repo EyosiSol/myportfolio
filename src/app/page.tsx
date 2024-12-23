@@ -3,7 +3,6 @@
 import { Poppins, Montserrat, Inter } from "next/font/google";
 
 import { useState } from "react";
-import GetIntouch from "./components/getIntouch";
 import Intro from "./components/intro";
 import About from "./components/About";
 import WhatIdo from "./components/whatIdo";
@@ -43,7 +42,6 @@ export default function Home() {
       <About inter={inter} montserrat={montserrat} />
       <WhatIdo inter={inter} />
       <Project show={show} handleshow={handleshow} />
-      <GetIntouch />
     </div>
   );
 }
