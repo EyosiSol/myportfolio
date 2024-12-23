@@ -54,9 +54,6 @@ export default function Ui() {
                     {item.description}
                   </div>
                 </div>
-                <div className="w-full text-[#a9a9a9] text-sm font-normal font-['Inter'] leading-[21px]">
-                  {item.tech}
-                </div>
               </div>
               <div className="p-[7.53px] origin-top-left bg-[#4fc3f7] rounded-[64.97px] justify-center items-center gap-[9.42px] flex">
                 <Link
