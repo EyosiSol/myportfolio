@@ -8,7 +8,7 @@ export default function whatido({
   inter: any;
 }) {
   return (
-    <div className="w-[929px] h-[691px] flex-col justify-start items-center gap-9 inline-flex">
+    <div className="w-[1000px] h-auto flex-col justify-start items-center gap-9 inline-flex border-2 border-red-500">
       <div className="flex-col justify-start items-center flex">
         <div
           className={`text-white text-[45px] font-extrabold font-['Inter'] ${inter.className}`}
@@ -21,8 +21,8 @@ export default function whatido({
           My Services
         </div>
       </div>
-      <div className="self-stretch justify-start items-center h-full py-4 gap-5 inline-flex">
-        <div className="w-[620px] flex justify-center items-center gap-1 h-fit py-4 bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px]">
+      <div className="grid grid-cols-3 justify-start items-center h-full py-4 gap-5 w-full border border-red-500">
+        <div className=" w-full col-span-2 flex justify-center items-center gap-1 h-fit py-4 bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500">
           <div className="w-[300px] left-[20px] top-[101px] flex-col justify-start items-start gap-4 inline-flex">
             <div className="left-[20px] top-[38px] justify-start items-start gap-2.5 inline-flex">
               <div className="w-11 h-11 bg-[#f5f8ff] rounded-[9px]" />
@@ -49,7 +49,7 @@ export default function whatido({
             height={280}
           />
         </div>
-        <div className="w-[289px] h-auto flex justify-center items-center bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px]">
+        <div className="w-[289px] h-auto flex justify-center items-center bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500">
           <div className="w-[289px] py-2 h-full flex-col gap-6 justify-start items-start pl-[26px] inline-flex">
             <div className="p-2.5 bg-[#f5f8ff] rounded-[9px] justify-start items-start gap-2.5 inline-flex overflow-hidden">
               <div className="w-6 h-6 overflow-hidden" />

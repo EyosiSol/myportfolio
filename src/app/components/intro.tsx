@@ -11,7 +11,7 @@ export default function Intro({
   montserrat: any;
 }) {
   return (
-    <div className="w-fit h-fit p-20 gap-4 flex flex-col items-center justify-center left-0 top-0  bg-[url('/images/Pattern.png')] bg-cover bg-center rounded-[500px]">
+    <div className="w-full h-fit md:w-fit p-20 gap-4 flex flex-col items-center justify-center left-0 top-0  bg-[url('/images/Pattern.png')] bg-cover bg-center rounded-[500px] border border-red-500">
       <Image
         className="w-[202px] h-[197px] left-[421px] top-[137px] rounded-full border border-[#4fc3f7]"
         src="/images/Pic.jpg"

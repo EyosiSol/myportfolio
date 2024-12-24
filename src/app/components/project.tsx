@@ -19,7 +19,7 @@ export default function project({ show, handleshow }: Props) {
   };
 
   return (
-    <div className="w-[1144px] h-fit gap-10 flex-col justify-between items-center inline-flex">
+    <div className="w-[1000px] h-fit gap-10 flex-col justify-between items-center inline-flex">
       <div className="flex-col justify-start items-center flex">
         <div className="text-white text-[45px] font-extrabold font-['Inter']">
           Projects
