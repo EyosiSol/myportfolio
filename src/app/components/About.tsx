@@ -12,10 +12,10 @@ export default function About({
   montserrat: any;
 }) {
   return (
-    <div className="w-[840px] h-[481px] flex flex-col items-center gap-8 justify-center">
-        <div className="left-[329px] top-0  flex-col justify-start items-center inline-flex">
+    <div className="w-dvw h-auto md:w-[840px] md:h-[481px] flex flex-col items-center gap-8 justify-center">
+        <div className=" w-full left-[329px] top-0  flex-col justify-start items-center inline-flex">
           <div
-            className={`text-white text-[45px] font-extrabold ${inter.className} font-inter`}
+            className={`text-white text-4xl mb-2 md:text-[45px] font-extrabold ${inter.className} font-inter`}
           >
             About Me
           </div>
@@ -26,7 +26,7 @@ export default function About({
           </div>
         </div>
         <div
-          className={`w-[840px] left-0 top-[111px]  text-center text-[#e1e1e1] text-[17px] font-medium ${inter.className} font-inter leading-[25px] text-justify`}
+          className={`w-dvw p-3 md:w-[840px] left-0 top-[111px]  text-center text-[#e1e1e1] text-[17px] font-medium ${inter.className} font-inter leading-[25px] text-justify`}
         >
           Hi there! I&apos;m Eyosias Solomon, a passionate Graphics and UI/UX
           Designer, React Developer, and Electronics Engineer. My expertise
