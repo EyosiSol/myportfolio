@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -21,7 +23,7 @@ export default function whatido({
           My Services
         </div>
       </div>
-      <div className="grid grid-cols-3 justify-start items-center h-full py-4 gap-5 w-full border border-red-500">
+      <div className="grid grid-cols-3 items-center h-full py-4 gap-5 w-full border border-red-500">
         <div className=" w-full col-span-2 flex justify-center items-center gap-1 h-fit py-4 bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500">
           <div className="w-[300px] left-[20px] top-[101px] flex-col justify-start items-start gap-4 inline-flex">
             <div className="left-[20px] top-[38px] justify-start items-start gap-2.5 inline-flex">
@@ -49,7 +51,7 @@ export default function whatido({
             height={280}
           />
         </div>
-        <div className="w-[289px] h-auto flex justify-center items-center bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500">
+        <div className="w-full h-auto flex justify-center items-center bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500">
           <div className="w-[289px] py-2 h-full flex-col gap-6 justify-start items-start pl-[26px] inline-flex">
             <div className="p-2.5 bg-[#f5f8ff] rounded-[9px] justify-start items-start gap-2.5 inline-flex overflow-hidden">
               <div className="w-6 h-6 overflow-hidden" />

@@ -1,3 +1,5 @@
+"use client";
+
 import WebDev from "./web/page";
 import Ui from "./ui/page";
 import PCB from "./pcb/page";

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 
 export default function About({
@@ -24,7 +26,7 @@ export default function About({
           </div>
         </div>
         <div
-          className={`w-[840px] left-0 top-[111px]  text-center text-[#e1e1e1] text-[17px] font-medium ${inter.className} font-inter leading-[25px]`}
+          className={`w-[840px] left-0 top-[111px]  text-center text-[#e1e1e1] text-[17px] font-medium ${inter.className} font-inter leading-[25px] text-justify`}
         >
           Hi there! I&apos;m Eyosias Solomon, a passionate Graphics and UI/UX
           Designer, React Developer, and Electronics Engineer. My expertise
