@@ -32,7 +32,7 @@ export default function Intro({
         Frontend Developer | UI/UX Designer🧙‍♂️
       </div>
       <div
-        className={`w-dvw md:w-[793px] h-auto left-[125px] top-[476px] text-center text-[#e1e1e1] text-[19px] font-medium ${poppins.className} font-poppins leading-[30px] px-5 text-justify`}
+        className={`w-dvw md:w-[793px] h-auto left-[125px] top-[476px] text-center text-[#e1e1e1] text-[19px] font-medium ${poppins.className} font-poppins leading-[30px] px-5`}
       >
         A passionate Frontend Developer and UI/UX Designer with a knack for
         creating user-friendly and visually appealing web interfaces. and also
