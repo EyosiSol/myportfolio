@@ -37,7 +37,7 @@ export default function Ui() {
           >
             <div className="w-fit h-full flex-col justify-center items-center gap-8">
               <Image
-                className="self-stretch max-w-[140px] md:w-[360px] md:h-[200px] "
+                className="self-stretch w-[140px] md:w-full md:h-[200px] "
                 src={item.image}
                 alt="Project placeholder"
                 width={360}
