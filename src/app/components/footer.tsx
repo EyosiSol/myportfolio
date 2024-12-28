@@ -22,55 +22,54 @@ const telegramURL = "https://t.me/the_Kaleidoscope";
 
 export default function footer() {
   return (
-    <div className="h-[242px] flex-col justify-start items-center gap-10 inline-flex">
-      <div className="justify-center items-center gap-[266px] inline-flex">
+    <div className="w-dvw md:w-fit md:h-[242px] flex-col justify-start items-center gap-10 inline-flex border border-blue-500">
+      <div className="justify-between h-auto w-full px-2 items-center gap-2 md:gap-[266px] inline-flex">
         <div
-          className={`w-[693px] text-[#dedede] text-[48px] font-medium ${inter.className} capitalize leading-[66.78px] tracking-[4.41px]`}
+          className={`w-fit h-fit md:w-[693px] text-[#dedede] text-xl md:text-[48px] font-medium ${inter.className} md:capitalize md:leading-[66.78px] md:tracking-[4.41px]`}
         >
           Let’s <br />
-          Work Together -{" "}
+          Work <br className="md:hidden"/>Together
         </div>
-        <div className="w-fit h-[76.24px] flex flex-col justify-center items-center gap-2 border border-[#484e53] rounded-[15px] px-2">
+        <div className="w-fit h-auto py-2 md:h-[76.24px] flex flex-col justify-center items-center gap-2 border border-[#484e53] rounded-[15px] px-2">
           <a
             href={gmailURL}
             target="_blank"
-            className="flex flex-row items-center gap-2"
+            className="flex flex-row justify-center items-center gap-1"
           >
             <div className="w-fit h-10 left-[27px] top-[19px] flex flex-row justify-center items-center gap-2">
               <div className="w-8 h-8 left-0 top-[7px]  flex-col justify-start items-start inline-flex overflow-hidden">
-                <div className="w-8 h-8">
-                  <FcGoogle className="w-8 h-8 " />
+                <div className=" w-4 h-4 md:w-8 md:h-8">
+                  <FcGoogle className=" w-4 h-4 md:w-8 md:h-8 " />
                 </div>
               </div>
-              <div className="w-fit h-10 text-justify text-[#c8c8c8] text-[24.90px] font-normal leading-[37.10px]">
+              <div className="w-fit h-10 text-justify text-[#c8c8c8] md:text-[24.90px] font-normal leading-[37.10px]">
                 eyosila123@gmail.com
               </div>
             </div>
           </a>
         </div>
       </div>
-      <div className="flex-col justify-start items-center gap-9 flex">
-        <div className="w-full h-[0px] border border-[#484e53]"></div>
-        <div className="justify-start items-end gap-[685px] inline-flex">
-          <div className="w-[285px] h-[26px] text-[#a9a9a9] text-base font-normal lowercase leading-normal tracking-tight">
-            ©2024 All rights reserved.
-            <br />
+      <div className="w-full md:w-fit flex-col justify-between md:justify-start items-center gap-9 flex border border-green-500">
+        <div className=" px-4 w-full md:w-fit justify-between md:justify-between md:gap-[685px] flex">
+          <div className="w-fit md:w-[285px] h-auto md:h-[26px] text-[#a9a9a9]  text-s md:text-base font-normal lowercase leading-normal tracking-tight">
+            ©2024 <br className="block md:hidden" />All rights reserved.
+            
           </div>
-          <div className="w-[244px] h-8 flex flex-row items-center gap-4">
+          <div className=" w-fit md:w-[244px] md:h-8 flex flex-row items-center gap-4">
             <a href={linkedinURL} target="_blank">
-              <FaLinkedin className="w-8 h-8 left-[53px] top-0 " />
+              <FaLinkedin className="w-6 md:w-8 md:h-8 left-[53px] top-0 " />
             </a>
             <a href={githubURL} target="_blank">
-              <FaGithub className="w-8 h-8 left-[212px] top-0 " />
+              <FaGithub className="md:w-8 md:h-8 left-[212px] top-0 " />
             </a>
             <a href={twitterURL} target="_blank">
-              <FaTwitter className="w-8 h-8 left-0 top-0 " />
+              <FaTwitter className="md:w-8 md:h-8 left-0 top-0 " />
             </a>
             <a href={instagramURL} target="_blank">
-              <FaInstagram className="w-8 h-8 left-[159px] top-0 " />
+              <FaInstagram className="md:w-8 md:h-8 left-[159px] top-0 " />
             </a>
             <a href={telegramURL} target="_blank">
-              <FaTelegramPlane className="w-8 h-8 left-[297px] top-0 " />
+              <FaTelegramPlane className="md:w-8 md:h-8 left-[297px] top-0 " />
             </a>
           </div>
         </div>
