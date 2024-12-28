@@ -37,7 +37,7 @@ export default function Home() {
   };
   console.log(show);
   return (
-    <div className="flex flex-col items-center justify-center gap-36">
+    <div className="flex flex-col items-center justify-center gap-20 md:gap-36">
       <Intro poppins={poppins} montserrat={montserrat} />
       <About inter={inter} montserrat={montserrat} />
       <WhatIdo inter={inter} />
