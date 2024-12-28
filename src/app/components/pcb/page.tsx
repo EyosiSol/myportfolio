@@ -33,7 +33,7 @@ export default function PCB() {
         {pcb.map((item, index) => (
           <div
             key={index}
-            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex border border-blue-500"
+            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex "
           >
             <div className="w-fit h-full flex-col justify-center items-center gap-8">
               <Image

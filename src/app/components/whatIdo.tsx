@@ -10,7 +10,7 @@ export default function whatido({
   inter: any;
 }) {
   return (
-    <div className="px-2 w-dvw md:max-w-[1000px] h-auto flex-col justify-start items-center gap-9 inline-flex border-2 border-red-500">
+    <div className="px-2 w-dvw md:max-w-[1000px] h-auto flex-col justify-start items-center gap-9 inline-flex ">
       <div className="flex-col justify-start items-center flex">
         <div
           className={`text-white text-4xl mb-2 md:text-[45px] font-extrabold ${inter.className} font-inter`}
@@ -23,8 +23,8 @@ export default function whatido({
           My Services
         </div>
       </div>
-      <div className="grid md:grid-cols-3 items-center h-full py-4 gap-5 w-full border border-red-500">
-        <div className=" w-full md:w-fit md:col-span-2 flex justify-center items-center gap-1 h-fit py-4 bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-blue-500">
+      <div className="grid md:grid-cols-3 items-center h-full py-4 gap-5 w-full">
+        <div className=" w-full md:w-fit md:col-span-2 flex justify-center items-center gap-1 h-fit py-4 bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px]">
           <div className="w-full md:w-fit px-3 md:px-0 left-[20px] top-[101px] flex-col justify-center md:justify-start md:items-start gap-4 inline-flex">
             <div className="hidden md:flex left-[20px] top-[38px] justify-center md:justify-start md:items-start gap-2.5">
               <div className="w-11 h-11 bg-[#f5f8ff] rounded-[9px]" />
@@ -51,8 +51,8 @@ export default function whatido({
             height={280}
           />
         </div>
-        <div className="w-full h-full flex flex-col   bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-blue-500">
-          <div className="w-full md:w-full md:h-full flex-col gap-3 justify-center items-center md:items-start pl-3 md:pl-[26px] inline-flex border border-blue-500">
+        <div className="w-full h-full flex flex-col   bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px]">
+          <div className="w-full md:w-full md:h-full flex-col gap-3 justify-center items-center md:items-start pl-3 md:pl-[26px] inline-fle">
             <div className=" hidden md:block p-2 bg-[#f5f8ff] rounded-[9px] md:gap-2.5  overflow-hidden">
               <div className="w-6 h-6 overflow-hidden" />
             </div>
@@ -73,8 +73,8 @@ export default function whatido({
           </div>
         </div>
       </div>
-      <div className="w-full flex-col md:flex-row justify-start items-start gap-5 flex border border-blue-500 ">
-        <div className="md:p-6 flex-col justify-center items-center md:justify-end md:items-start md:gap-[19px] inline-flex bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500 pl-3">
+      <div className="w-full flex-col md:flex-row justify-start items-start gap-5 flex ">
+        <div className="md:p-6 flex-col justify-center items-center md:justify-end md:items-start md:gap-[19px] inline-flex bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] pl-3">
           <div className=" hidden md:flex p-2.5 bg-[#f5f8ff] rounded-[9px] justify-start items-start gap-2.5  overflow-hidden">
             <div className="w-6 h-6 overflow-hidden" />
           </div>
@@ -95,7 +95,7 @@ export default function whatido({
             </div>
           </div>
         </div>
-        <div className="md:p-6 flex-col justify-center items-center md:justify-end md:items-start md:gap-[19px] inline-flex bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500 pl-3">
+        <div className="md:p-6 flex-col justify-center items-center md:justify-end md:items-start md:gap-[19px] inline-flex bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] pl-3">
           <div className=" hidden md:flex p-2.5 bg-[#f5f8ff] rounded-[9px] justify-start items-start gap-2.5  overflow-hidden">
             <div className="w-6 h-6 overflow-hidden" />
           </div>
@@ -116,7 +116,7 @@ export default function whatido({
             </div>
           </div>
         </div>
-        <div className="md:p-6 flex-col justify-center items-center md:justify-end md:items-start md:gap-[19px] inline-flex bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px] border border-red-500 pl-3">
+        <div className="md:p-6 flex-col justify-center items-center md:justify-end md:items-start md:gap-[19px] inline-flex bg-gradient-to-br from-[#1b1b1b] to-[#050505] rounded-[10px]pl-3">
           <div className=" hidden md:flex p-2.5 bg-[#f5f8ff] rounded-[9px] justify-start items-start gap-2.5  overflow-hidden">
             <div className="w-6 h-6 overflow-hidden" />
           </div>

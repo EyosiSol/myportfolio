@@ -30,7 +30,7 @@ export default function project({ show, handleshow }: Props) {
           Some of my Work
         </div>
       </div>
-      <div className="border border-blue-500 w-full md:w-fit px-4  items-center justify-between md:gap-[55px] inline-flex">
+      <div className="w-full md:w-fit px-4  items-center justify-between md:gap-[55px] inline-flex">
         <div
           id="Web"
           className={`w-fit h-auto p-2.5 md:px-2.5 px-6 rounded-3xl md:rounded-3xl border border-[#484e53] justify-center items-center gap-2.5 flex cursor-pointer ${

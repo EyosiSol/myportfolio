@@ -22,7 +22,7 @@ const telegramURL = "https://t.me/the_Kaleidoscope";
 
 export default function footer() {
   return (
-    <div className="w-dvw md:w-fit md:h-[242px] flex-col justify-start items-center gap-10 inline-flex border border-blue-500">
+    <div className="w-dvw md:w-fit md:h-[242px] flex-col justify-start items-center gap-10 inline-flex">
       <div className="justify-between h-auto w-full px-2 items-center gap-2 md:gap-[266px] inline-flex">
         <div
           className={`w-fit h-fit md:w-[693px] text-[#dedede] text-xl md:text-[48px] font-medium ${inter.className} md:capitalize md:leading-[66.78px] md:tracking-[4.41px]`}
@@ -49,7 +49,8 @@ export default function footer() {
           </a>
         </div>
       </div>
-      <div className="w-full md:w-fit flex-col justify-between md:justify-start items-center gap-9 flex border border-green-500">
+      <div className="w-full md:w-fit flex-col justify-between md:justify-start items-center gap-9 flex">
+        <div className="w-full border border-gray-500"></div>
         <div className=" px-4 w-full md:w-fit justify-between md:justify-between md:gap-[685px] flex">
           <div className="w-fit md:w-[285px] h-auto md:h-[26px] text-[#a9a9a9]  text-s md:text-base font-normal lowercase leading-normal tracking-tight">
             ©2024 <br className="block md:hidden" />All rights reserved.
