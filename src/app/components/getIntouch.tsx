@@ -72,18 +72,18 @@ export default function GetIntouch() {
 
   return (
     <div
-      className={`w-dvw md:w-[700px] h-[861px] flex-col justify-start items-center gap-10 inline-flex ${inter.className} mt-20` }
+      className={`w-dvw px-4 md:w-[700px] h-fit md:h-[861px] flex-col justify-start items-center gap-10 inline-flex ${inter.className} mt-20`}
     >
       <div className="flex flex-col gap-2">
-        <div className="self-stretch text-center text-white text-5xl font-extrabold">
+        <div className="self-stretch text-center text-white text-3xl md:text-5xl font-extrabold">
           Get In Touch
         </div>
-        <div className="self-stretch text-center text-[#4fc3f7] text-xl font-semibold">
+        <div className="self-stretch text-center text-[#4fc3f7] md:text-xl font-semibold">
           Lets work together
         </div>
       </div>
       <form
-        className="w-full h-[710px] flex-col justify-start items-start gap-4 flex"
+        className="w-full h-[710px] border border-blue-500 flex-col justify-start items-start gap-4 flex"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col gap-4 w-full md:grid md:grid-cols-5 md:w-full">
@@ -100,7 +100,7 @@ export default function GetIntouch() {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full h-[70px] rounded-[10px] border border-[#d6ddec] px-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
+              className="w-full h-12 md:h-[70px] rounded-[10px] border border-[#d6ddec] px-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
               required
             />
           </div>
@@ -117,7 +117,7 @@ export default function GetIntouch() {
               placeholder="example@email.com"
               value={formData.email}
               onChange={handleChange}
-              className="w-full h-[70px] rounded-[10px] border border-[#d6ddec] px-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
+              className="w-full h-12 md:h-[70px] rounded-[10px] border border-[#d6ddec] px-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
               required
             />
           </div>
@@ -134,18 +134,20 @@ export default function GetIntouch() {
             placeholder="Write your message here..."
             value={formData.message}
             onChange={handleChange}
-            className="w-full min-h-[240px] h-auto rounded-[10px] border border-[#d6ddec] px-4 py-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
+            className="w-full h-60 md:min-h-[240px] md:h-auto rounded-[10px] border border-[#d6ddec] px-4 py-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
             required
           />
         </div>
-        <button
-          type="submit"
-          className="w-full py-[19px] text-center text-black text-2xl font-bold leading-normal bg-white rounded-[10px] justify-center items-center inline-flex overflow-hidden"
-        >
-          Send
-        </button>
+        <div className="w-full px-28 md:w-full">
+          <button
+            type="submit"
+            className="w-full py-3 md:py-[19px] text-center text-black text-2xl font-bold leading-normal bg-white rounded-[10px] justify-center items-center inline-flex overflow-hidden"
+          >
+            Send
+          </button>
+        </div>
+        <div className=" w-full flex items-center justify-center">{status && <h3>{status}</h3>}</div>
       </form>
-      {status && <h4>{status}</h4>}
     </div>
   );
 }
