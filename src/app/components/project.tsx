@@ -21,19 +21,19 @@ export default function project({ show, handleshow }: Props) {
   };
 
   return (
-    <div className="w-[1000px] h-fit gap-10 flex-col justify-between items-center inline-flex">
-      <div className="flex-col justify-start items-center flex">
-        <div className="text-white text-[45px] font-extrabold font-['Inter']">
+    <div className="px-2 w-dvw md:max-w-[1000px] h-fit gap-10 flex-col justify-between items-center inline-flex">
+      <div className="flex-col justify-start items-center flex gap-2">
+        <div className="text-white text-3xl md:text-[45px] font-extrabold font-['Inter']">
           Projects
         </div>
-        <div className="text-[#4fc3f7] text-sm font-semibold font-['Inter']">
+        <div className="text-[#4fc3f7] text-xs md:text-sm font-semibold font-['Inter']">
           Some of my Work
         </div>
       </div>
-      <div className="justify-center items-center gap-[55px] inline-flex">
+      <div className="border border-blue-500 w-full md:w-fit px-4  items-center justify-between md:gap-[55px] inline-flex">
         <div
           id="Web"
-          className={`w-fit h-[55px] p-2.5 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex cursor-pointer ${
+          className={`w-fit h-auto p-2.5 md:px-2.5 px-6 rounded-3xl md:rounded-3xl border border-[#484e53] justify-center items-center gap-2.5 flex cursor-pointer ${
             show === "webdev"
               ? "bg-[#484E53] text-[#F5F5F5]"
               : "bg-[#1b1b1b] text-[#A9A9A9]"
@@ -42,13 +42,14 @@ export default function project({ show, handleshow }: Props) {
             handleshow("webdev");
           }}
         >
-          <div className="text-base font-normal font-['Inter'] leading-normal cursor-pointer px-2">
-            Web Development
+          <div className="w-fit text-base font-normal font-['Inter'] leading-normal cursor-pointer px-2 flex gap-1">
+            <p>Web</p>
+            <p className="hidden md:block">Development</p>
           </div>
         </div>
         <div
           id="Ui"
-          className={`w-[141px] h-[55px] p-2.5 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex cursor-pointer ${
+          className={`w-fit h-auto  p-2.5 md:px-2.5 px-6 rounded-3xl border border-[#484e53] justify-center items-center gap-2.5 flex cursor-pointer ${
             show === "ui"
               ? "bg-[#484E53] text-[#F5F5F5]"
               : "bg-[#1b1b1b] text-[#A9A9A9]"
@@ -57,13 +58,13 @@ export default function project({ show, handleshow }: Props) {
             handleshow("ui");
           }}
         >
-          <div className="text-base font-normal font-['Inter'] leading-normal cursor-pointer">
-            Ui/Ux Design
+          <div className=" flex gap-1 text-base font-normal font-['Inter'] leading-normal cursor-pointer">
+            <p>Ui/Ux</p> <p className="hidden md:block">Design</p>
           </div>
         </div>
         <div
           id="PCB"
-          className={`w-[129px] h-[55px] p-2.5 rounded-[50px] border border-[#484e53] justify-center items-center gap-2.5 flex cursor-pointer ${
+          className={`w-fit h-auto p-2.5 md:px-2.5 px-6 rounded-3xl border border-[#484e53] justify-center items-center gap-2.5 flex cursor-pointer ${
             show === "pcb"
               ? "bg-[#484E53] text-[#F5F5F5]"
               : "bg-[#1b1b1b] text-[#A9A9A9]"
@@ -72,8 +73,8 @@ export default function project({ show, handleshow }: Props) {
             handleshow("pcb");
           }}
         >
-          <div className=" text-base font-normal font-['Inter'] leading-normal ">
-            PCB Design
+          <div className=" flex gap-1 text-base font-normal font-['Inter'] leading-normal cursor-pointer">
+            <p>PCB</p> <p className="hidden md:block">Design</p>
           </div>
         </div>
       </div>
