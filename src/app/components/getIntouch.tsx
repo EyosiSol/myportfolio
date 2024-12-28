@@ -72,7 +72,7 @@ export default function GetIntouch() {
 
   return (
     <div
-      className={`w-dvw px-4 md:w-[700px] h-fit md:h-[861px] flex-col justify-start items-center gap-10 inline-flex ${inter.className} mt-20`}
+      className={`w-dvw px-4 md:w-[700px] h-fit md:h-[861px] flex-col justify-start items-center gap-5 md:gap-10 inline-flex ${inter.className} mt-20`}
     >
       <div className="flex flex-col gap-2">
         <div className="self-stretch text-center text-white text-3xl md:text-5xl font-extrabold">
@@ -83,7 +83,7 @@ export default function GetIntouch() {
         </div>
       </div>
       <form
-        className="w-full h-[710px] border border-blue-500 flex-col justify-start items-start gap-4 flex"
+        className="w-full h-fit md:h-[710px] flex-col justify-start items-start gap-4 flex"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col gap-4 w-full md:grid md:grid-cols-5 md:w-full">
