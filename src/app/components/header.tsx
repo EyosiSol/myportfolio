@@ -31,7 +31,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full md:w-full h-fit justify-between items-center flex">
+    <div className="w-full md:w-full lg:w-full h-fit justify-between items-center flex">
       <div className="h-fit w-full md:w-full justify-between items-center  flex  ">
         <div className={`flex items-center gap-3 ${oleoScript.className}`}>
           <Image
