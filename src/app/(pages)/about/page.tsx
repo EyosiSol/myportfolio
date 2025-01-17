@@ -3,8 +3,8 @@ import Image from "next/image";
 import pic from "@images/Pfp.png";
 export default function page() {
   return (
-    <div className="flex flex-col gap-5">
-      <section className="grid grid-cols-2 items-center px-20">
+    <div className="flex flex-col gap-10">
+      <section className="grid grid-cols-2 items-center px-20 mb-10">
         <div>
           <Image src={pic} alt="Eyosias Solomon" className=" w-[500px]" />
         </div>
