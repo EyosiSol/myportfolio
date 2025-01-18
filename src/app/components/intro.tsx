@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-
+import pfp from "@images/Pfp.png";
 export default function Intro({
   poppins,
   montserrat,
@@ -15,14 +15,12 @@ export default function Intro({
   return (
     <section
       id="intro"
-      className="w-dvw h-fit md:w-fit p-20 gap-2 md:gap-10 flex flex-col items-center justify-center left-0 top-0  bg-[url('/images/Pattern.png')] bg-cover bg-center rounded-3xl md:rounded-full"
+      className="w-dvw h-fit md:w-fit p-16 gap-2 md:gap-10 flex flex-col items-center justify-center left-0 top-0  bg-[url('/images/Pattern.png')] bg-cover bg-center rounded-3xl md:rounded-full"
     >
       <Image
-        className="w-44 h-auto md:w-[202px] md:h-[197px] left-[421px] top-[137px] rounded-full border border-[#4fc3f7] mb-4"
-        src="/images/Pic.jpg"
+        className="w-44 h-auto md:w-[480px]  left-[421px] top-[137px] mb-4"
+        src={pfp}
         alt="profile"
-        width={202}
-        height={197}
       />
       <div
         className={`left-[298px] top-[334px] text-white text-2xl md:text-[63px] font-bold ${poppins.className} font-poppins mb-4`}
