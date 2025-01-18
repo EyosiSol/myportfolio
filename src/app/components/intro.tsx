@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import pfp from "@images/Pfp.png";
+import Link from "next/link";
 export default function Intro({
   poppins,
   montserrat,
@@ -39,13 +40,15 @@ export default function Intro({
         creating user-friendly and visually appealing web interfaces. and also
         passionate about learning new technologies and frameworks.
       </div>
-      <div className="w-[187px] h-[55px] p-2.5 left-[428px] top-[606px]  rounded-[75px] border border-[#4fc3f7] justify-center items-center gap-2.5 inline-flex hover:bg-[#4fc3f7] hover:text-white transition-all duration-300 cursor-pointer mt-5 ">
-        <div
-          className={`text-white text-[15px] font-medium   ${montserrat.className} font-montserrat`}
-        >
-          Contact Me
+      <Link href="#contact">
+        <div className="w-[187px] h-[55px] p-2.5 left-[428px] top-[606px]  rounded-[75px] border border-[#4fc3f7] justify-center items-center gap-2.5 inline-flex hover:bg-[#4fc3f7] hover:text-white transition-all duration-300 cursor-pointer mt-5 ">
+          <div
+            className={`text-white text-[15px] font-medium   ${montserrat.className} font-montserrat`}
+          >
+            Contact Me
+          </div>
         </div>
-      </div>
+      </Link>
     </section>
   );
 }
