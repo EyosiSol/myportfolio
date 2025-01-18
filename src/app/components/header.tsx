@@ -6,6 +6,7 @@ import { MenuIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import { Oleo_Script, Montserrat } from "next/font/google";
 import Link from "next/link";
+import logo from "@images/logo.png";
 
 const oleoScript = Oleo_Script({
   subsets: ["latin"],
@@ -48,7 +49,7 @@ export default function Header() {
       <div className="h-fit w-full md:w-full justify-between items-center  flex  ">
         <div className={`flex items-center gap-3 ${oleoScript.className}`}>
           <Image
-            src="/logo.png"
+            src={logo}
             alt="logo"
             width={80}
             height={80}
@@ -80,7 +81,7 @@ export default function Header() {
               >
                 {label}
                 {section === id && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#4fc3f7]"></span>
+                  <span className="absolute bottom-[-2] left-0 w-full h-0.5 bg-[#4fc3f7]"></span>
                 )}
               </Link>
             </div>
