@@ -2,28 +2,36 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { LuLink } from "react-icons/lu";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export default function PCB() {
   const pcb = [
     {
       title: "8-bit Processor",
       description:
-        "Designed and simulated a custom 8-bit processor using Proteus, integrating architecture design, instruction set creation, and component implementation.",
-      image: "/images/webdev2.jpg",
+        "Designed a custom 8-bit processor using Proteus, integrating architecture design, instruction set, and component implementation.",
+      image: "/images/8bit.jpg",
       link: "https://github.com/EyosiSol/8-bit-Processor",
     },
     {
       title: "Traffic Light",
       description:
-        "Simulated a microcontroller-based traffic light system in Proteus, showcasing efficient traffic flow management and real-time control logic.",
-      image: "/images/webdev2.jpg",
-      link: "hhttps://github.com/EyosiSol/Traffic-Light-",
+        "Simulated a traffic light system in Proteus, showcasing efficient traffic flow management and real-time control logic.",
+      image: "/images/traffic.jpg",
+      link: "https://github.com/EyosiSol/Traffic-Light-",
     },
     {
       title: "Chemical Project",
       description:
-        "Designed and simulated a chemical reaction process using Moore's Diagram and Protues, showcasing circuit design, state machine analysis, and PCB implementation",
-      image: "/images/webdev2.jpg",
+        "Designed a chemical reaction process using Protues, showcasing circuit design, state machine analysis, and PCB implementation",
+      image: "/images/chemical.jpg",
       link: "https://github.com/EyosiSol/ChemicalProject-",
     },
   ];
@@ -33,11 +41,11 @@ export default function PCB() {
         {pcb.map((item, index) => (
           <div
             key={index}
-            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex "
+            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex hover:bg-gray-400 hover:bg-opacity-10"
           >
-            <div className="w-fit h-full flex-col justify-center items-center gap-8">
+            <div className="w-full h-fit flex-col justify-center items-center gap-8">
               <Image
-                className="self-stretch w-[140px] md:w-full md:h-[200px] "
+                className="w-[140px] md:w-full md:h-[200px] "
                 src={item.image}
                 alt="Project placeholder"
                 width={360}
@@ -47,10 +55,14 @@ export default function PCB() {
             <div className="w-full flex justify-between items-center gap-2">
               <div className="flex-col w-full items-start gap-2 inline-flex">
                 <div className="flex-col items-start gap-1 inline-flex">
-                  <div className="w-full text-[#c1c1c1] text-sm md:text-xl font-bold font-['Inter'] leading-[30px]">
+                  <div
+                    className={`w-full text-[#c1c1c1] text-sm md:text-xl font-bold ${inter.className} font-inter leading-[30px]`}
+                  >
                     {item.title}
                   </div>
-                  <div className="text-[#c1c1c1] text-[12px] md:text-sm font-normal font-['Inter'] leading-[21px]">
+                  <div
+                    className={`text-[#c1c1c1] text-[12px] md:text-sm font-normal ${inter.className} font-inter leading-[21px]`}
+                  >
                     {item.description}
                   </div>
                 </div>

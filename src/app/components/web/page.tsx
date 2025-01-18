@@ -2,27 +2,35 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { LuLink } from "react-icons/lu";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export default function WebDev() {
   const webDev = [
     {
       title: "My Recipe",
       description: "Food Recipe and step by step guide Website",
-      image: "/images/webdev2.jpg",
+      image: "/images/MyRecipie.png",
       link: "https://my-recipies-nu.vercel.app",
       tech: "React, Html, Css, Vercel, Postman",
     },
     {
       title: "VerseWise",
       description: "RAG Based AI Chatbot to answer your biblical questions",
-      image: "/images/webdev2.jpg",
+      image: "/images/Versewise.jpg",
       link: "https://versewise.io",
-      tech: "React, tailwindCss, WebSocket, Typescript",
+      tech: "React, Tailwind, WebSocket",
     },
     {
       title: "Tic Tac Toe",
-      description: " Website to play with your friends",
-      image: "/images/webdev2.jpg",
+      description: " Website to play Tic-Tac-Toe with your friends",
+      image: "/images/ticTAKTO.png",
       link: "https://tic-tac-toe-rouge-rho.vercel.app",
       tech: "Javascript, Html, Css, Vercel",
     },
@@ -33,9 +41,9 @@ export default function WebDev() {
         {webDev.map((item, index) => (
           <div
             key={index}
-            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex "
+            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex  hover:bg-gray-400 hover:bg-opacity-10"
           >
-            <div className="w-fit h-full flex-col justify-center items-center gap-8">
+            <div className="w-full h-fit flex-col justify-center items-center gap-8">
               <Image
                 className="self-stretch w-[140px] md:w-full md:h-[200px] "
                 src={item.image}
@@ -47,14 +55,20 @@ export default function WebDev() {
             <div className="w-full flex justify-between items-center gap-2">
               <div className="flex-col w-full items-start gap-2 inline-flex">
                 <div className="flex-col items-start gap-1 inline-flex">
-                  <div className="w-full text-[#c1c1c1] text-sm md:text-xl font-bold font-['Inter'] leading-[30px]">
+                  <div
+                    className={`w-full text-[#c1c1c1] text-sm md:text-xl font-bold ${inter.className} font-inter leading-[30px]`}
+                  >
                     {item.title}
                   </div>
-                  <div className="text-[#c1c1c1] text-[12px] md:text-sm font-normal font-['Inter'] leading-[21px]">
+                  <div
+                    className={`text-[#c1c1c1] text-[12px] md:text-sm font-normal ${inter.className} font-inter leading-[21px]`}
+                  >
                     {item.description}
                   </div>
                 </div>
-                <div className="w-full text-[#a9a9a9] text-[12px] md:text-sm font-normal font-['Inter'] leading-[21px]">
+                <div
+                  className={`w-full text-[#a9a9a9] text-[12px] md:text-sm font-normal ${inter.className} font-inter leading-[21px]`}
+                >
                   {item.tech}
                 </div>
               </div>

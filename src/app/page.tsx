@@ -41,7 +41,7 @@ export default function Home() {
       <Intro poppins={poppins} montserrat={montserrat} />
       <About inter={inter} montserrat={montserrat} />
       <WhatIdo inter={inter} />
-      <Project show={show} handleshow={handleshow} />
+      <Project show={show} handleshow={handleshow} inter={inter} />
     </div>
   );
 }

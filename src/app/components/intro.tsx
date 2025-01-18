@@ -13,9 +13,12 @@ export default function Intro({
   montserrat: any;
 }) {
   return (
-    <div className="w-dvw h-fit md:w-fit p-20 gap-6 flex flex-col items-center justify-center left-0 top-0  bg-[url('/images/Pattern.png')] bg-cover bg-center rounded-3xl md:rounded-full">
+    <section
+      id="intro"
+      className="w-dvw h-fit md:w-fit p-20 gap-2 md:gap-10 flex flex-col items-center justify-center left-0 top-0  bg-[url('/images/Pattern.png')] bg-cover bg-center rounded-3xl md:rounded-full"
+    >
       <Image
-        className="w-44 h-auto md:w-[202px] md:h-[197px] left-[421px] top-[137px] rounded-full border border-[#4fc3f7]"
+        className="w-44 h-auto md:w-[202px] md:h-[197px] left-[421px] top-[137px] rounded-full border border-[#4fc3f7] mb-4"
         src="/images/Pic.jpg"
         alt="profile"
         width={202}
@@ -45,6 +48,6 @@ export default function Intro({
           Contact Me
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -2,28 +2,35 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { LuLink } from "react-icons/lu";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export default function Ui() {
   const ui = [
     {
       title: "Office of Federal Auditor General",
-      description:
-        "Designed the User Interface and the User Experience for their offical website",
-      image: "/images/webdev2.jpg",
+      description: "Designed the User Experience for their offical website",
+      image: "/images/oFAG.jpg",
       link: "https://www.figma.com/design/IiWRsyobjpwxLBZPmqSY1Q/ofag-teamm?node-id=0-1&t=umJygedh3CEVkgZo-1",
     },
     {
       title: "VerseWise",
       description:
         "Designed the User Interface and the User Experience for RAG Based AI Chatbot Website to answer your biblical questions",
-      image: "/images/webdev2.jpg",
+      image: "/images/Versewise.jpg",
       link: "https://www.figma.com/design/yR7SMTRdxPDDlYyiO0I5ci/VERSEWise-2.0?node-id=0-1&t=a4Bzfqkm8ZbXtU2S-1",
     },
     {
       title: "Turumba",
       description:
         "Designed the User Interface and the User Experience for A mentoring platform by Great Comission Ethiopia",
-      image: "/images/webdev2.jpg",
+      image: "/images/Turumba.jpg",
       link: "https://www.figma.com/design/agU0weaXl50Gj0SwvcZt2p/Soul-Sync-Design?node-id=579-104583&t=qdCfzy8RhCdsr2Z2-1",
     },
   ];
@@ -33,9 +40,9 @@ export default function Ui() {
         {ui.map((item, index) => (
           <div
             key={index}
-            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex"
+            className="w-full md:flex-col h-full justify-between md:items-start p-2 gap-4 flex hover:bg-gray-400 hover:bg-opacity-10"
           >
-            <div className="w-fit h-full flex-col justify-center items-center gap-8">
+            <div className="w-full h-fit flex-col justify-center items-center gap-8">
               <Image
                 className="self-stretch w-[140px] md:w-full md:h-[200px] "
                 src={item.image}
@@ -47,10 +54,14 @@ export default function Ui() {
             <div className="w-full flex justify-between items-center gap-2">
               <div className="flex-col w-full items-start gap-2 inline-flex">
                 <div className="flex-col items-start gap-1 inline-flex">
-                  <div className="w-full text-[#c1c1c1] text-sm md:text-xl font-bold font-['Inter'] leading-[30px]">
+                  <div
+                    className={`w-full text-[#c1c1c1] text-sm md:text-xl font-bold ${inter.className} font-inter leading-[30px]`}
+                  >
                     {item.title}
                   </div>
-                  <div className="text-[#c1c1c1] text-[12px] md:text-sm font-normal font-['Inter'] leading-[21px]">
+                  <div
+                    className={`text-[#c1c1c1] text-[12px] md:text-sm font-normal ${inter.className} font-inter leading-[21px]`}
+                  >
                     {item.description}
                   </div>
                 </div>
