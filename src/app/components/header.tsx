@@ -81,7 +81,7 @@ export default function Header() {
               >
                 {label}
                 {section === id && (
-                  <span className="absolute bottom-[-2] left-0 w-full h-0.5 bg-[#4fc3f7]"></span>
+                  <span className="absolute bottom-[2] left-0 w-full h-0.5 bg-[#4fc3f7]"></span>
                 )}
               </Link>
             </div>
