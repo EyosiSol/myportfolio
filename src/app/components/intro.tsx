@@ -18,7 +18,7 @@ export default function Intro({
       className="w-dvw h-fit md:w-fit p-16 gap-2 md:gap-10 flex flex-col items-center justify-center left-0 top-0  bg-[url('/images/Pattern.png')] bg-cover bg-center rounded-3xl md:rounded-full"
     >
       <Image
-        className="w-44 h-auto md:w-[480px]  left-[421px] top-[137px] mb-4"
+        className="w-full h-auto md:w-[480px]  left-[421px] top-[137px] mb-4"
         src={pfp}
         alt="profile"
       />
