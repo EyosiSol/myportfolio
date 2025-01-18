@@ -28,7 +28,8 @@ export default function footer() {
           className={`w-fit h-fit md:w-[693px] text-[#dedede] text-xl md:text-[48px] font-medium ${inter.className} md:capitalize md:leading-[66.78px] md:tracking-[4.41px]`}
         >
           Let’s <br />
-          Work <br className="md:hidden"/>Together
+          Work <br className="md:hidden" />
+          Together
         </div>
         <div className="w-fit h-auto py-2 md:h-[76.24px] flex flex-col justify-center items-center gap-2 border border-[#484e53] rounded-[15px] px-2">
           <a
@@ -53,8 +54,8 @@ export default function footer() {
         <div className="w-full border border-gray-500"></div>
         <div className=" px-4 w-full md:w-fit justify-between md:justify-between md:gap-[685px] flex">
           <div className="w-fit md:w-[285px] h-auto md:h-[26px] text-[#a9a9a9]  text-s md:text-base font-normal lowercase leading-normal tracking-tight">
-            ©2024 <br className="block md:hidden" />All rights reserved.
-            
+            ©2025 <br className="block md:hidden" />
+            All rights reserved.
           </div>
           <div className=" w-fit md:w-[244px] md:h-8 flex flex-row items-center gap-4">
             <a href={linkedinURL} target="_blank">

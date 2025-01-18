@@ -71,7 +71,8 @@ export default function GetIntouch() {
   };
 
   return (
-    <div
+    <section
+      id="contact"
       className={`w-dvw px-4 md:w-[700px] h-fit md:h-[861px] flex-col justify-start items-center gap-5 md:gap-10 inline-flex ${inter.className} mt-20`}
     >
       <div className="flex flex-col gap-2">
@@ -146,8 +147,10 @@ export default function GetIntouch() {
             Send
           </button>
         </div>
-        <div className=" w-full flex items-center justify-center">{status && <h3>{status}</h3>}</div>
+        <div className=" w-full flex items-center justify-center">
+          {status && <h3>{status}</h3>}
+        </div>
       </form>
-    </div>
+    </section>
   );
 }

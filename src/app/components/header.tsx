@@ -85,13 +85,15 @@ export default function Header() {
               </Link>
             </div>
           ))}
-          <div className="w-[126px] h-[45px] p-2.5 hover:bg-[#4fc3f7] hover:text-black rounded-[9px] border border-[#4fc3f7] justify-center items-center gap-2.5 flex cursor-pointer">
-            <div
-              className={`text-[15px] light:text-black dark:text-white font-semibold ${montserrat.className}`}
-            >
-              Contact Me
+          <Link href="#contact">
+            <div className="w-[126px] h-[45px] p-2.5 hover:bg-[#4fc3f7] hover:text-black rounded-[9px] border border-[#4fc3f7] justify-center items-center gap-2.5 flex cursor-pointer">
+              <div
+                className={`text-[15px] light:text-black dark:text-white font-semibold ${montserrat.className}`}
+              >
+                Contact Me
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="w-fit h-[30px] relative flex items-center justify-center">
