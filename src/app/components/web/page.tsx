@@ -14,25 +14,25 @@ const inter = Inter({
 export default function WebDev() {
   const webDev = [
     {
-      title: "My Recipe",
-      description: "Food Recipe and step by step guide Website",
-      image: "/images/MyRecipie.png",
-      link: "https://my-recipies-nu.vercel.app",
-      tech: "React, Html, Css, Vercel, Postman",
+      title: "Dire-Delivery",
+      description: "Order and User Tracking Webapp ",
+      image: "/images/dire.png",
+      link: "https://dire-delivery.netlify.app",
+      tech: "Nextjs,Tailwind, Vercel, Postman",
     },
     {
       title: "VerseWise",
-      description: "RAG Based AI Chatbot to answer your biblical questions",
+      description: "RAG based Bible Chatbot",
       image: "/images/Versewise.jpg",
       link: "https://versewise.io",
       tech: "React, Tailwind, WebSocket",
     },
     {
-      title: "Tic Tac Toe",
-      description: " Website to play Tic-Tac-Toe with your friends",
-      image: "/images/ticTAKTO.png",
-      link: "https://tic-tac-toe-rouge-rho.vercel.app",
-      tech: "Javascript, Html, Css, Vercel",
+      title: "LeyuChat",
+      description: "Mentoring Platform",
+      image: "/images/leyu.png",
+      link: "https://dev.leyuchat.com/",
+      tech: "NextJs,Socket-io,Postman",
     },
   ];
   return (
@@ -45,11 +45,12 @@ export default function WebDev() {
           >
             <div className="w-full h-fit flex-col justify-center items-center gap-8">
               <Image
-                className="self-stretch w-[140px] md:w-full md:h-[200px] "
+                className="w-[140px] md:w-full md:h-[240px]"
                 src={item.image}
                 alt="Project placeholder"
                 width={360}
                 height={200}
+              
               />
             </div>
             <div className="w-full flex justify-between items-center gap-2">

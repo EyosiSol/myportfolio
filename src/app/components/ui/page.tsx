@@ -14,8 +14,8 @@ const inter = Inter({
 export default function Ui() {
   const ui = [
     {
-      title: "Office of Federal Auditor General",
-      description: "Designed the User Experience for their offical website",
+      title: "Federal Auditor General",
+      description: "Designed the User Experience and User Interface for their offical website of the Office of Federal Auditor General ",
       image: "/images/oFAG.jpg",
       link: "https://www.figma.com/design/IiWRsyobjpwxLBZPmqSY1Q/ofag-teamm?node-id=0-1&t=umJygedh3CEVkgZo-1",
     },
@@ -27,9 +27,9 @@ export default function Ui() {
       link: "https://www.figma.com/design/yR7SMTRdxPDDlYyiO0I5ci/VERSEWise-2.0?node-id=0-1&t=a4Bzfqkm8ZbXtU2S-1",
     },
     {
-      title: "Turumba",
+      title: "LeyuChat",
       description:
-        "Designed the User Interface and the User Experience for A mentoring platform by Great Comission Ethiopia",
+        "Designed the User Interface and the User Experience for A mentoring platform using Figma and Prototyped it",
       image: "/images/Turumba.jpg",
       link: "https://www.figma.com/design/agU0weaXl50Gj0SwvcZt2p/Soul-Sync-Design?node-id=579-104583&t=qdCfzy8RhCdsr2Z2-1",
     },
@@ -52,7 +52,7 @@ export default function Ui() {
               />
             </div>
             <div className="w-full flex justify-between items-center gap-2">
-              <div className="flex-col w-full items-start gap-2 inline-flex">
+              <div className="flex-col w-full items-start justify-start gap-2 inline-flex">
                 <div className="flex-col items-start gap-1 inline-flex">
                   <div
                     className={`w-full text-[#c1c1c1] text-sm md:text-xl font-bold ${inter.className} font-inter leading-[30px]`}

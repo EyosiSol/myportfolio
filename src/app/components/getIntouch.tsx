@@ -101,7 +101,7 @@ export default function GetIntouch() {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full h-12 md:h-[70px] rounded-[10px] border border-[#d6ddec] px-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
+              className="w-full h-12 md:h-[70px] rounded-[10px] border border-[#8F8F8F] px-4 text-[#8987a1] text-xl font-normal leading-[30px] bg-transparent"
               required
             />
           </div>
